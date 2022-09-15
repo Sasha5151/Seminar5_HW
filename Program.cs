@@ -70,17 +70,48 @@
 // Найдите разницу между максимальным и минимальным элементов массива.
 // [3 7 22 2 78] -> 76
 
+// int size = 15;
+// int[]array = new int[size];
+// FillArray (array);
+// System.Console.WriteLine("[{0}]" , string.Join(" , ", array));
+// MaxMin(array);
+
+// void FillArray (int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//     array[i] = new Random().Next(0 , 100);
+//     }
+// }
+
+// void MaxMin(int [] array )
+// {
+//      int max = array[0];
+//      int min = array[0];
+//     for (int i = 1; i < array.Length; i++)
+//     {
+//         if (array[i] > max)
+//         max = array[i];
+//         if (array[i] < min)
+//         min = array[i];
+//     }
+//     int Delta = max - min ;
+//     System.Console.WriteLine(Delta);
+
+// }
+
+
 int size = 15;
-int[]array = new int[size];
+double[]array = new double[size];
 FillArray (array);
 System.Console.WriteLine("[{0}]" , string.Join(" , ", array));
 MaxMin(array);
 
-void FillArray (int[] array)
+void FillArray (double[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
-    array[i] = new Random().Next(0 , 100);
+    double array[i] = new Random().NextDouble(0 , 100);
     }
 }
 
@@ -97,4 +128,5 @@ void MaxMin(int [] array )
     }
     int Delta = max - min ;
     System.Console.WriteLine(Delta);
+
 }
