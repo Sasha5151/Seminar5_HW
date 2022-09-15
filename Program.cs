@@ -100,33 +100,4 @@
 
 // }
 
-
-int size = 15;
-double[]array = new double[size];
-FillArray (array);
-System.Console.WriteLine("[{0}]" , string.Join(" , ", array));
-MaxMin(array);
-
-void FillArray (double[] array)
-{
-    for (int i = 0; i < array.Length; i++)
-    {
-    double array[i] = new Random().NextDouble(0 , 100);
-    }
-}
-
-void MaxMin(int [] array )
-{
-     int max = array[0];
-     int min = array[0];
-    for (int i = 1; i < array.Length; i++)
-    {
-        if (array[i] > max)
-        max = array[i];
-        if (array[i] < min)
-        min = array[i];
-    }
-    int Delta = max - min ;
-    System.Console.WriteLine(Delta);
-
-}
+//End
